@@ -13,8 +13,8 @@ const {
   scheduleMeeting,
 } = require('./ZoomHelper');
 
-const ZOOM_MEETING_SDK_KEY = 'eSDulDrBSwmK3FyDSAVa6Q';
-const ZOOM_MEETING_SDK_SECRET = '7xNPhMvp107iJ1Izx1ZkLbOrx7VjSIis';
+const ZOOM_MEETING_SDK_KEY = process.env.ZOOM_MEETING_SDK_KEY;
+const ZOOM_MEETING_SDK_SECRET = process.env.ZOOM_MEETING_SDK_SECRET;
 
 const app = express();
 const port = 4000;

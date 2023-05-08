@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useState } from 'react';
 import { MEETING_LIST } from '../CommonUtils/ApiConstant';
-import { getRefreshToken } from '../CommonUtils/CommonUtils';
+import { dateFormat, getRefreshToken } from '../CommonUtils/CommonUtils';
 import {
   ACCESS_TOKEN_EXPIRED,
   NODE_API_END_POINT,
@@ -55,45 +55,6 @@ const MeetingList = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [meetingList]);
-
-  /**
-   * @function
-   * @name dateFormat
-   * @desc function that returns the required date string from date object
-   *
-   * @param date: object that contain the date object.
-   * @returns {string} formatted date string after conversion.
-   */
-  const dateFormat = (date) => {
-    let dateString =
-      ('0' + (date.getMonth() + 1)).slice(-2) +
-      '/' +
-      ('0' + date.getDate()).slice(-2) +
-      '/' +
-      date.getFullYear() +
-      ' ' +
-      formatAMPM(date);
-    return dateString;
-  };
-
-  /**
-   * @function
-   * @name formatAMPM
-   * @desc function that returns the formatted time with AM/PM.
-   *
-   * @param date: object that contain the date object.
-   * @returns {string} formatted date string after conversion.
-   */
-  function formatAMPM(date) {
-    var hours = date.getHours();
-    var minutes = date.getMinutes();
-    var ampm = hours >= 12 ? 'PM' : 'AM';
-    hours = hours % 12;
-    hours = hours ? (hours < 10 ? '0' + hours : hours) : 12; // the hour '0' should be '12'
-    minutes = minutes < 10 ? '0' + minutes : minutes;
-    var strTime = hours + ':' + minutes + ' ' + ampm;
-    return strTime;
-  }
 
   return (
     <>

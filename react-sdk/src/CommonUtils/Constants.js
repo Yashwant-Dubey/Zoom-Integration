@@ -10,7 +10,7 @@ export const NODE_API_END_POINT = 'http://localhost:4000';
  *  @type {string}
  *  @default
  */
-export const MEETING_SDK_KEY = 'eSDulDrBSwmK3FyDSAVa6Q';
+export const MEETING_SDK_KEY = 'xxxxxxxxxxx1234'; // Enter your zoom meeting SDK Client ID
 
 /** @constant
  * @name LEAVE_URL
