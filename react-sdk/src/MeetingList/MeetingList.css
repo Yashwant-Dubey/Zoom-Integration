@@ -1,0 +1,41 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tbody:nth-child(even)  {
+    background-color: #dddddd;
+}
+
+.table_div{
+    margin-top: 2%;
+}
+
+.start-meeting-button {
+    background-color: #2D8CFF;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 8px;
+}
+
+.start-meeting-button:hover,
+.start-meeting-button:focus {
+    cursor: pointer;
+    background-color: #2681F2;
+    text-decoration: none;
+    color: #ffffff;
+}

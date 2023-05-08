@@ -1,0 +1,90 @@
+html, body {
+  overflow: visible !important;
+}
+
+
+#zmmtg-root {
+  display: none;
+}
+
+.App {
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+.join-meeting-button {
+  margin-top: 20px;
+    background-color: #2D8CFF;
+    color: #ffffff;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.join-meeting-button:hover {
+  cursor: pointer;
+  background-color: #2681F2;
+}
+
+.meeting-header {
+  background-color: #2D8CFF;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  margin-bottom: 0;
+  color: white;
+  border-radius: 8px 8px 0px 0px;
+  text-align: center;
+}
+
+.meeting-container {
+  display: flex;
+  background-color: rgb(228, 228, 228);
+  padding: 20px 20px 20px 20px;
+  flex-wrap: wrap;
+
+}
+
+.meeting-container input {
+  padding: 10px 15px;
+  border-radius: 2px;
+  border: 1px solid rgba(187, 181, 181, 0.979);
+  justify-items: center;
+}
+
+.meeting-container select {
+  padding: 10px 15px;
+  border-radius: 2px;
+  border: 1px solid rgba(187, 181, 181, 0.979);
+  justify-items: center;
+  width: 219.6px;
+}
+
+.action-container button {
+  padding: 10px 15px;
+  width: 100%;
+  background-color: #2D8CFF;
+  color: white;
+  border-radius: 4px;
+}
+
+.action-container {
+  background-color: rgb(228, 228, 228);
+  padding: 20px 20px 30px 20px;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.meeting-grid {
+  flex: 0 0 23%;
+  margin: 1%;
+}
+.helpText{
+  padding: 0px 0px 10px 4px;
+}
